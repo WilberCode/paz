@@ -1,0 +1,32 @@
+[
+    {
+      "img": "https://links.papareact.com/xqj",
+      "lat": -12.0600,
+      "long": -77.0375,
+      "nombre": "Lima"
+    },
+    {
+      "img": "https://links.papareact.com/xqj",
+      "lat": -12.0333,
+      "long": -77.1333,
+      "nombre": "Callao"
+    },
+    {
+      "img": "https://links.papareact.com/xqj",
+      "lat": -16.4000,
+      "long": -71.5333,
+      "nombre": "Arequipa"
+    },
+    {
+      "img": "https://links.papareact.com/xqj",
+      "lat": -8.1120,
+      "long": -79.0288,
+      "nombre": "Trujillo"
+    },
+    {
+      "img": "https://links.papareact.com/xqj",
+      "lat": -7.1667,
+      "long": -78.5167,
+      "nombre": "Cajamarca"
+    }
+  ]

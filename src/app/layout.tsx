@@ -1,6 +1,10 @@
-import './globals.css'
+import './globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Header from '@/components/organisms/Header'
+import 'mapbox-gl/dist/mapbox-gl.css';
+import Footer from '@/components/organisms/Footer';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +19,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es"> 
+      <body className={inter.className}>
+     {/*  <Nav/> */}
+        <Header/> 
+        {children}
+        <Footer/> 
+      </body>
     </html>
   )
 }
