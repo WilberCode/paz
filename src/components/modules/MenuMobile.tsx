@@ -12,7 +12,8 @@ const MenuMobile = () => {
 
   return (
     <ul  className="flex flex-col justify-center ">
-      {menu.map(menu =>  <MenuLink key={menu.link} link={menu.link} label={menu.label} active={useHash(menu.link)}  /> )}
+    {/*   {menu.map(menu =>  <MenuLink key={menu.link} link={menu.link} label={menu.label} active={useHash(menu.link)}  /> )} */}
+      {menu.map(menu =>  <MenuLink key={menu.link} link={menu.link} label={menu.label} active={false}  /> )}
     </ul> 
   )
 }
