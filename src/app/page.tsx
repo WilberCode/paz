@@ -24,7 +24,7 @@ export default function Home() {
           </div>
        </div>
        <div id="puntos-venta" >
-         {/* <FiltroTLC/>  */}
+         <FiltroTLC/> 
        </div>
      
        <div    id="contactanos">
