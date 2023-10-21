@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 /* import './globals.css' */
->>>>>>> 28277005129d343671cc4a424b5b41510028050c
 import './globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
