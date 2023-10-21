@@ -8,11 +8,11 @@ import menu from "@/lib/menu";
 
 
 const MenuDesktop = () => {    
+  const {currentLink} =  useHash();
 
   return (
     <ul  className="flex items-center space-x-14">
-    {/*   {menu.map(menu =>  <MenuLink key={menu.link} link={menu.link} label={menu.label} active={useHash(menu.link)}  desktop /> )} */}
-      {menu.map(menu =>  <MenuLink key={menu.link} link={menu.link} label={menu.label} active={true}  desktop /> )}
+      {menu.map(menu =>  <MenuLink key={menu.link} link={menu.link} label={menu.label} active={currentLink(menu.link)}  desktop /> )} 
     </ul> 
   )
 }

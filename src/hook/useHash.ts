@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
  
 
-const useHash = (hash:string) => {
+const useHash = () => {
 
     const hashIndex =useParams()
     const [currenthash, setHash] = useState('')
@@ -11,7 +11,10 @@ const useHash = (hash:string) => {
         setHash(`/${window.location.hash}`)
     }, [hashIndex]);
     
+    const currentLink = (hash:string)=>{
+         return currenthash === hash 
+    }
 
-  return   currenthash === hash 
+  return   {currentLink}
 }
 export default useHash
