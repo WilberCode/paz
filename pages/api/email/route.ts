@@ -69,7 +69,15 @@ export default async function POST(request:  NextRequest) {
   const { nombre, apellido, correo, celular, mensaje }: FormPropsContact = JSON.parse(bodyText);
  
   
-
+  let mensaje_correo = ` 
+                        |-------------------------------------
+                         Nombre: ${nombre} \n
+                         Apellido: ${apellido} \n
+                         Correo: ${correo} \n
+                         Celular: ${celular} \n
+                         Mensaje: ${mensaje} \n
+                         -------------------------------------|
+                      ` 
   const transport = nodemailer.createTransport({
     service: 'gmail', 
       host: "smtp.gmail.com",
@@ -85,8 +93,8 @@ export default async function POST(request:  NextRequest) {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Message from ${nombre} (${correo})`,
-    text: mensaje,
+    subject: `Mensaje desde ${nombre} (${correo})`,
+    text: mensaje_correo,
   };
 
   const sendMailPromise = () =>
