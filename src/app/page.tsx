@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className=" ">
-       <Banner/> 
+       <Banner/>  
        <div  className=" "  id="categorias">
           <div className="container">
            <div className="md:flex max-md:space-y-16 md:space-x-6 py-[100px] ">

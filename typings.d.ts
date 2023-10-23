@@ -9,3 +9,11 @@ type DataEntryFiltered = {
     longitude: number;
     zoom?: number; 
 }
+
+interface FormPropsContact  {
+    nombre:string;
+    apellido:string;
+    correo:string;
+    celular:string;
+    mensaje:string;
+}
